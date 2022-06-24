@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Category</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in table %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.title }}</td>
+            <td>{{ row.category }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<form method="POST" action="/?action=logout" >
+    <button type="submit">Выйти</button>
+</form>
